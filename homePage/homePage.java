@@ -5,8 +5,11 @@
 package edu.ijse.homePage;
 
 
+import edu.ijse.view.BookCategoryView;
 import edu.ijse.view.BookView;
+import edu.ijse.view.BorrowingTransactionsView;
 import edu.ijse.view.MemberView;
+import edu.ijse.view.ReturnView;
 import edu.ijse.welcome.Welcome;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -76,9 +79,19 @@ public class homePage extends javax.swing.JFrame {
 
         btnBorrowingTransactions.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
         btnBorrowingTransactions.setText("Manage Borrowing Transactions");
+        btnBorrowingTransactions.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnBorrowingTransactionsActionPerformed(evt);
+            }
+        });
 
         btnReturn.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
         btnReturn.setText("Return & Apply Fines");
+        btnReturn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnReturnActionPerformed(evt);
+            }
+        });
 
         btnLogOut.setFont(new java.awt.Font("Segoe UI", 3, 24)); // NOI18N
         btnLogOut.setText("Log Out");
@@ -134,7 +147,7 @@ public class homePage extends javax.swing.JFrame {
 
     private void btnMembersActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnMembersActionPerformed
        setVisible(false);
-        try {
+        try { 
             new MemberView().setVisible(true);
         } catch (Exception ex) {
             Logger.getLogger(homePage.class.getName()).log(Level.SEVERE, null, ex);
@@ -142,7 +155,13 @@ public class homePage extends javax.swing.JFrame {
     }//GEN-LAST:event_btnMembersActionPerformed
 
     private void btnBookCategoriesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBookCategoriesActionPerformed
-        // TODO add your handling code here:
+       setVisible(false);
+        try {
+            new BookCategoryView().setVisible(true);
+        } catch (Exception ex) {
+            Logger.getLogger(homePage.class.getName()).log(Level.SEVERE, null, ex);
+        }
+       
     }//GEN-LAST:event_btnBookCategoriesActionPerformed
 
     private void btnBooksActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBooksActionPerformed
@@ -160,6 +179,24 @@ public class homePage extends javax.swing.JFrame {
          setVisible(false);
          new Welcome().setVisible(true);
     }//GEN-LAST:event_btnLogOutActionPerformed
+
+    private void btnBorrowingTransactionsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnBorrowingTransactionsActionPerformed
+        setVisible(false);
+        try {
+            new BorrowingTransactionsView().setVisible(true);
+        } catch (Exception ex) {
+            Logger.getLogger(homePage.class.getName()).log(Level.SEVERE, null, ex);
+        }  
+    }//GEN-LAST:event_btnBorrowingTransactionsActionPerformed
+
+    private void btnReturnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnReturnActionPerformed
+        setVisible(false);
+        try {
+            new ReturnView().setVisible(true);
+        } catch (Exception ex) {
+            Logger.getLogger(homePage.class.getName()).log(Level.SEVERE, null, ex);
+        }  
+    }//GEN-LAST:event_btnReturnActionPerformed
 
    
     // Variables declaration - do not modify//GEN-BEGIN:variables

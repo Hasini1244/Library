@@ -119,6 +119,9 @@
         </Property>
         <Property name="text" type="java.lang.String" value="Manage Borrowing Transactions"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnBorrowingTransactionsActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="btnReturn">
       <Properties>
@@ -127,6 +130,9 @@
         </Property>
         <Property name="text" type="java.lang.String" value="Return &amp; Apply Fines"/>
       </Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="btnReturnActionPerformed"/>
+      </Events>
     </Component>
     <Component class="javax.swing.JButton" name="btnLogOut">
       <Properties>

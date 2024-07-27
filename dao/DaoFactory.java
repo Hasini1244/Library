@@ -5,7 +5,12 @@
 package edu.ijse.dao;
 
 import edu.ijse.dao.custom.Impl.BookDaoImpl;
+import edu.ijse.dao.custom.Impl.BookCategoryDaoImpl;
+import edu.ijse.dao.custom.Impl.BorrowDetailDaoImpl;
+import edu.ijse.dao.custom.Impl.BorrowingTransactionsDaoImpl;
 import edu.ijse.dao.custom.Impl.MemberDaoImpl;
+import edu.ijse.dao.custom.Impl.ReturnDaoImpl;
+import edu.ijse.dao.custom.Impl.ReturnDetailDaoImpl;
 
 /**
  *
@@ -30,13 +35,23 @@ public class DaoFactory {
                 return new BookDaoImpl();
                  case MEMBER:
                 return new MemberDaoImpl();
-            
+            case BOOKCATEGORY:
+                return new BookCategoryDaoImpl();
+                 case BorrowingTransactions:
+                return new BorrowingTransactionsDaoImpl();
+                 case BORROW_DETAIL:
+                return new BorrowDetailDaoImpl();
+                 case Return:
+                return new ReturnDaoImpl();
+                 case RETURN_DETAIL:
+                return new ReturnDetailDaoImpl();
+                
             default:
                 return null;
         }
     }
 
     public enum DaoTypes{
-      BOOK,MEMBER;
+      BOOK,MEMBER,BOOKCATEGORY,BorrowingTransactions,Return,BORROW_DETAIL,RETURN_DETAIL;
     }
 }

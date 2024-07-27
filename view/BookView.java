@@ -20,7 +20,7 @@ import javax.swing.table.DefaultTableModel;
 public class BookView extends javax.swing.JFrame {
 private final BookController BOOK_CONTROLLER;
     /**
-     * Creates new form ItemView
+     * Creates new form BookView
      */
    public BookView() throws Exception {
         BOOK_CONTROLLER = new BookController();
