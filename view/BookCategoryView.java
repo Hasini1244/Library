@@ -50,21 +50,31 @@ private final BookCategoryController BOOKCATEGORY_CONTROLLER;
         jScrollPane1 = new javax.swing.JScrollPane();
         tblBookCategory = new javax.swing.JTable();
         btnBack = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        getContentPane().setLayout(null);
 
-        lblBookCategories.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
+        lblBookCategories.setFont(new java.awt.Font("Segoe Script", 1, 48)); // NOI18N
         lblBookCategories.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblBookCategories.setText("Manage Book Categories");
+        getContentPane().add(lblBookCategories);
+        lblBookCategories.setBounds(0, 25, 925, 77);
 
         lblBookId.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         lblBookId.setText("Book ID");
+        getContentPane().add(lblBookId);
+        lblBookId.setBounds(17, 156, 87, 25);
 
         lblBookCategory.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         lblBookCategory.setText("Book Category");
+        getContentPane().add(lblBookCategory);
+        lblBookCategory.setBounds(17, 330, 127, 25);
 
         lblLanguage.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         lblLanguage.setText("Language");
+        getContentPane().add(lblLanguage);
+        lblLanguage.setBounds(17, 241, 83, 25);
 
         jComboBox2.setFont(new java.awt.Font("Segoe UI", 3, 18)); // NOI18N
         jComboBox2.setForeground(new java.awt.Color(51, 0, 153));
@@ -74,34 +84,49 @@ private final BookCategoryController BOOKCATEGORY_CONTROLLER;
                 jComboBox2ActionPerformed(evt);
             }
         });
+        getContentPane().add(jComboBox2);
+        jComboBox2.setBounds(203, 327, 271, 31);
+        getContentPane().add(txtBookId);
+        txtBookId.setBounds(203, 159, 271, 25);
 
         jComboBox1.setFont(new java.awt.Font("Segoe UI", 3, 18)); // NOI18N
         jComboBox1.setForeground(new java.awt.Color(0, 51, 153));
         jComboBox1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "English", "Sinhala", "Tamil" }));
+        getContentPane().add(jComboBox1);
+        jComboBox1.setBounds(203, 238, 271, 30);
 
-        btnSave.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        btnSave.setFont(new java.awt.Font("Script MT Bold", 2, 24)); // NOI18N
+        btnSave.setIcon(new javax.swing.ImageIcon(getClass().getResource("/edu/ijse/view/save new.jpg"))); // NOI18N
         btnSave.setText("Save");
         btnSave.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnSaveActionPerformed(evt);
             }
         });
+        getContentPane().add(btnSave);
+        btnSave.setBounds(930, 130, 156, 40);
 
-        btnUpdate.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        btnUpdate.setFont(new java.awt.Font("Script MT Bold", 2, 24)); // NOI18N
+        btnUpdate.setIcon(new javax.swing.ImageIcon(getClass().getResource("/edu/ijse/view/update.jpg"))); // NOI18N
         btnUpdate.setText("Update");
         btnUpdate.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnUpdateActionPerformed(evt);
             }
         });
+        getContentPane().add(btnUpdate);
+        btnUpdate.setBounds(930, 220, 158, 47);
 
-        btnDelete.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        btnDelete.setFont(new java.awt.Font("Script MT Bold", 2, 24)); // NOI18N
+        btnDelete.setIcon(new javax.swing.ImageIcon(getClass().getResource("/edu/ijse/view/dlt image.png"))); // NOI18N
         btnDelete.setText("Delete");
         btnDelete.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnDeleteActionPerformed(evt);
             }
         });
+        getContentPane().add(btnDelete);
+        btnDelete.setBounds(940, 306, 156, 40);
 
         tblBookCategory.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -121,75 +146,23 @@ private final BookCategoryController BOOKCATEGORY_CONTROLLER;
         });
         jScrollPane1.setViewportView(tblBookCategory);
 
-        btnBack.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        getContentPane().add(jScrollPane1);
+        jScrollPane1.setBounds(6, 388, 900, 174);
+
+        btnBack.setFont(new java.awt.Font("Script MT Bold", 2, 24)); // NOI18N
+        btnBack.setIcon(new javax.swing.ImageIcon(getClass().getResource("/edu/ijse/view/back image.jpg"))); // NOI18N
         btnBack.setText("Back");
         btnBack.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnBackActionPerformed(evt);
             }
         });
+        getContentPane().add(btnBack);
+        btnBack.setBounds(950, 570, 148, 36);
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addComponent(lblBookCategories, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(17, 17, 17)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(lblBookId, javax.swing.GroupLayout.PREFERRED_SIZE, 87, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(lblLanguage))
-                        .addGap(99, 99, 99)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(txtBookId)
-                            .addComponent(jComboBox1, 0, 271, Short.MAX_VALUE)))
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(lblBookCategory)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 59, Short.MAX_VALUE)
-                        .addComponent(jComboBox2, javax.swing.GroupLayout.PREFERRED_SIZE, 271, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                    .addComponent(btnUpdate, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(btnSave, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                    .addComponent(btnDelete, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                .addGap(65, 65, 65))
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 900, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(19, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(btnBack)
-                .addGap(89, 89, 89))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(25, 25, 25)
-                .addComponent(lblBookCategories, javax.swing.GroupLayout.PREFERRED_SIZE, 77, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(37, 37, 37)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(lblBookId)
-                    .addComponent(txtBookId, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnSave))
-                .addGap(27, 27, 27)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(lblLanguage)
-                    .addComponent(jComboBox1, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnUpdate))
-                .addGap(32, 32, 32)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(lblBookCategory)
-                    .addComponent(jComboBox2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(btnDelete))
-                .addGap(18, 18, 18)
-                .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 241, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(35, 35, 35)
-                .addComponent(btnBack)
-                .addContainerGap(60, Short.MAX_VALUE))
-        );
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/edu/ijse/view/background image.jpg"))); // NOI18N
+        getContentPane().add(jLabel1);
+        jLabel1.setBounds(-3, -4, 1320, 730);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -228,6 +201,7 @@ private final BookCategoryController BOOKCATEGORY_CONTROLLER;
     private javax.swing.JButton btnUpdate;
     private javax.swing.JComboBox<String> jComboBox1;
     private javax.swing.JComboBox<String> jComboBox2;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JLabel lblBookCategories;
     private javax.swing.JLabel lblBookCategory;

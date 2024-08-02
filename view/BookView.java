@@ -58,6 +58,7 @@ private final BookController BOOK_CONTROLLER;
         jScrollPane2 = new javax.swing.JScrollPane();
         tblBooks = new javax.swing.JTable();
         btnBack = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
 
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -73,55 +74,87 @@ private final BookController BOOK_CONTROLLER;
         jScrollPane1.setViewportView(jTable1);
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        getContentPane().setLayout(null);
 
-        lblHeader.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
+        lblHeader.setFont(new java.awt.Font("Segoe Script", 1, 48)); // NOI18N
         lblHeader.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblHeader.setText("Manage Books");
+        getContentPane().add(lblHeader);
+        lblHeader.setBounds(6, 6, 952, 66);
 
-        lblBookId.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        lblBookId.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         lblBookId.setText("Book ID");
+        getContentPane().add(lblBookId);
+        lblBookId.setBounds(6, 102, 75, 25);
 
-        lblBookName.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        lblBookName.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         lblBookName.setText("Book Name");
+        getContentPane().add(lblBookName);
+        lblBookName.setBounds(6, 154, 99, 25);
 
-        lblAuthor.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        lblAuthor.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         lblAuthor.setText("Author");
+        getContentPane().add(lblAuthor);
+        lblAuthor.setBounds(6, 205, 70, 25);
 
-        lblPrice.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        lblPrice.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         lblPrice.setText("Price");
+        getContentPane().add(lblPrice);
+        lblPrice.setBounds(417, 154, 84, 25);
 
-        lblnumber.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        lblnumber.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
         lblnumber.setText("No Of Books");
+        getContentPane().add(lblnumber);
+        lblnumber.setBounds(417, 102, 120, 25);
+        getContentPane().add(txtBookId);
+        txtBookId.setBounds(127, 102, 207, 22);
 
         txtBookName.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtBookNameActionPerformed(evt);
             }
         });
+        getContentPane().add(txtBookName);
+        txtBookName.setBounds(129, 154, 205, 22);
+        getContentPane().add(txtAuthor);
+        txtAuthor.setBounds(129, 206, 205, 20);
+        getContentPane().add(txtPrice);
+        txtPrice.setBounds(600, 160, 206, 22);
+        getContentPane().add(txtnumber);
+        txtnumber.setBounds(600, 100, 206, 22);
 
-        btnSave.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        btnSave.setFont(new java.awt.Font("Script MT Bold", 1, 18)); // NOI18N
+        btnSave.setIcon(new javax.swing.ImageIcon(getClass().getResource("/edu/ijse/view/save new.jpg"))); // NOI18N
         btnSave.setText("Save");
         btnSave.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnSaveActionPerformed(evt);
             }
         });
+        getContentPane().add(btnSave);
+        btnSave.setBounds(980, 90, 150, 40);
 
-        btnUpdate.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        btnUpdate.setFont(new java.awt.Font("Script MT Bold", 1, 18)); // NOI18N
+        btnUpdate.setIcon(new javax.swing.ImageIcon(getClass().getResource("/edu/ijse/view/update.jpg"))); // NOI18N
         btnUpdate.setText("Update");
         btnUpdate.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnUpdateActionPerformed(evt);
             }
         });
+        getContentPane().add(btnUpdate);
+        btnUpdate.setBounds(980, 160, 150, 40);
 
-        btnDelete.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        btnDelete.setFont(new java.awt.Font("Script MT Bold", 1, 18)); // NOI18N
+        btnDelete.setIcon(new javax.swing.ImageIcon(getClass().getResource("/edu/ijse/view/dlt image.png"))); // NOI18N
         btnDelete.setText("Delete");
         btnDelete.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnDeleteActionPerformed(evt);
             }
         });
+        getContentPane().add(btnDelete);
+        btnDelete.setBounds(980, 230, 150, 47);
 
         tblBooks.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -141,93 +174,23 @@ private final BookController BOOK_CONTROLLER;
         });
         jScrollPane2.setViewportView(tblBooks);
 
-        btnBack.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        getContentPane().add(jScrollPane2);
+        jScrollPane2.setBounds(0, 271, 964, 318);
+
+        btnBack.setFont(new java.awt.Font("Script MT Bold", 1, 24)); // NOI18N
+        btnBack.setIcon(new javax.swing.ImageIcon(getClass().getResource("/edu/ijse/view/back image.jpg"))); // NOI18N
         btnBack.setText("Back");
         btnBack.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnBackActionPerformed(evt);
             }
         });
+        getContentPane().add(btnBack);
+        btnBack.setBounds(980, 590, 150, 36);
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(lblBookId, javax.swing.GroupLayout.PREFERRED_SIZE, 75, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(46, 46, 46)
-                                .addComponent(txtBookId, javax.swing.GroupLayout.PREFERRED_SIZE, 207, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(lblBookName)
-                                    .addComponent(lblAuthor, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGap(46, 46, 46)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(txtBookName)
-                                    .addComponent(txtAuthor))))
-                        .addGap(83, 83, 83)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(lblPrice, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                            .addComponent(lblnumber, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                        .addGap(78, 78, 78)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addComponent(txtPrice, javax.swing.GroupLayout.DEFAULT_SIZE, 206, Short.MAX_VALUE)
-                            .addComponent(txtnumber))
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(lblHeader, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                        .addContainerGap())
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addGap(0, 0, Short.MAX_VALUE)
-                        .addComponent(btnSave)
-                        .addGap(18, 18, 18)
-                        .addComponent(btnUpdate)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                        .addComponent(btnDelete)
-                        .addGap(56, 56, 56))))
-            .addComponent(jScrollPane2)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(btnBack)
-                .addGap(49, 49, 49))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(lblHeader, javax.swing.GroupLayout.PREFERRED_SIZE, 66, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(30, 30, 30)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(lblBookId)
-                    .addComponent(lblPrice)
-                    .addComponent(txtBookId, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(txtPrice, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(30, 30, 30)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(lblBookName)
-                    .addComponent(lblnumber)
-                    .addComponent(txtBookName, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(txtnumber, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(29, 29, 29)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(lblAuthor)
-                    .addComponent(txtAuthor, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(btnSave)
-                    .addComponent(btnUpdate)
-                    .addComponent(btnDelete))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, 318, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addComponent(btnBack)
-                .addContainerGap(18, Short.MAX_VALUE))
-        );
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/edu/ijse/view/background image.jpg"))); // NOI18N
+        getContentPane().add(jLabel1);
+        jLabel1.setBounds(-3, -4, 1300, 730);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -262,6 +225,7 @@ updateBook();
     private javax.swing.JButton btnDelete;
     private javax.swing.JButton btnSave;
     private javax.swing.JButton btnUpdate;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JTable jTable1;
@@ -324,7 +288,7 @@ public void clearForm(){
 
     private void loadTable() {
         try {
-            String[] columns = {"BookId", "Name", "Author", "Price", "number"};
+            String[] columns = {"BookId", "Name", "Author", "number", "Price"};
             DefaultTableModel dtm = new DefaultTableModel(columns, 0) {
                 @Override
                 public boolean isCellEditable(int row, int column) {
@@ -336,7 +300,7 @@ public void clearForm(){
 
             ArrayList<BookDto> bookDtos = BOOK_CONTROLLER.getAll();
             for (BookDto bookDto : bookDtos) {
-                Object[] rowData = {bookDto.getBookId(), bookDto.getName(), bookDto.getAuthor(), bookDto.getPrice(), bookDto.getnumber()};
+                Object[] rowData = {bookDto.getBookId(), bookDto.getName(), bookDto.getAuthor(), bookDto.getnumber(), bookDto.getPrice()};
                 dtm.addRow(rowData);
             }
         } catch (Exception e) {
@@ -352,8 +316,8 @@ public void clearForm(){
                 txtBookId.setText(dto.getBookId());
                 txtBookName.setText(dto.getName());
                 txtAuthor.setText(dto.getAuthor());
-                txtPrice.setText(dto.getPrice().toString());
                 txtnumber.setText(dto.getnumber().toString());
+                txtPrice.setText(dto.getPrice().toString());
             } else {
                 JOptionPane.showMessageDialog(this, "Book not found");
             }

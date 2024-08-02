@@ -24,9 +24,9 @@ boolean isSaved = CrudUtil.executeUpdate("INSERT INTO book VALUES(?,?,?,?,?)",
     }
     @Override
     public String update(BookEntity t) throws Exception {
-boolean isUpdated = CrudUtil.executeUpdate("UPDATE book SET Name=?, Author=?, Price = ?, number=? WHERE BookId =?",
+boolean isUpdated = CrudUtil.executeUpdate("UPDATE book SET Name=?, Author=?, number = ?, Price=? WHERE BookId =?",
                 t.getName(), t.getAuthor(),
-                t.getPrice(), t.getnumber(), t.getBookId());
+                t.getnumber(), t.getPrice(), t.getBookId());
         return isUpdated ? "Success" : "Fail";
     }
     

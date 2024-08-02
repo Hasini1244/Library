@@ -86,96 +86,155 @@ public class ReturnView extends javax.swing.JFrame {
         txtBookId = new javax.swing.JTextField();
         jScrollPane4 = new javax.swing.JScrollPane();
         tblReturn = new javax.swing.JTable();
+        jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        getContentPane().setLayout(null);
 
-        lblTopic.setFont(new java.awt.Font("Segoe UI", 1, 36)); // NOI18N
+        lblTopic.setFont(new java.awt.Font("Segoe Script", 3, 48)); // NOI18N
         lblTopic.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblTopic.setText("Return & Apply Fines");
+        getContentPane().add(lblTopic);
+        lblTopic.setBounds(10, 10, 994, 60);
 
-        btnBack.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        btnBack.setFont(new java.awt.Font("Script MT Bold", 1, 18)); // NOI18N
+        btnBack.setIcon(new javax.swing.ImageIcon(getClass().getResource("/edu/ijse/view/back image.jpg"))); // NOI18N
         btnBack.setText("Back");
         btnBack.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnBackActionPerformed(evt);
             }
         });
+        getContentPane().add(btnBack);
+        btnBack.setBounds(816, 592, 110, 40);
+        getContentPane().add(txtFine);
+        txtFine.setBounds(234, 473, 227, 22);
 
         lblFine.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         lblFine.setText("Apply Fines");
+        getContentPane().add(lblFine);
+        lblFine.setBounds(25, 475, 76, 20);
+        getContentPane().add(jSeparator1);
+        jSeparator1.setBounds(6, 442, 1250, 10);
 
-        btnMemberSearch.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        btnMemberSearch.setFont(new java.awt.Font("Script MT Bold", 1, 18)); // NOI18N
+        btnMemberSearch.setIcon(new javax.swing.ImageIcon(getClass().getResource("/edu/ijse/view/search.jpg"))); // NOI18N
         btnMemberSearch.setText("Search");
         btnMemberSearch.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnMemberSearchActionPerformed(evt);
             }
         });
+        getContentPane().add(btnMemberSearch);
+        btnMemberSearch.setBounds(29, 292, 130, 47);
 
         lblMemberData.setColumns(20);
         lblMemberData.setRows(5);
         jScrollPane1.setViewportView(lblMemberData);
 
+        getContentPane().add(jScrollPane1);
+        jScrollPane1.setBounds(230, 284, 234, 86);
+
         lblBookId.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         lblBookId.setText("Book ID");
+        getContentPane().add(lblBookId);
+        lblBookId.setBounds(586, 244, 53, 20);
 
-        btnBookSearch.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        btnBookSearch.setFont(new java.awt.Font("Script MT Bold", 1, 18)); // NOI18N
+        btnBookSearch.setIcon(new javax.swing.ImageIcon(getClass().getResource("/edu/ijse/view/search.jpg"))); // NOI18N
         btnBookSearch.setText("Search");
         btnBookSearch.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnBookSearchActionPerformed(evt);
             }
         });
+        getContentPane().add(btnBookSearch);
+        btnBookSearch.setBounds(562, 294, 130, 50);
 
         lblBookData.setColumns(20);
         lblBookData.setRows(5);
         jScrollPane3.setViewportView(lblBookData);
 
+        getContentPane().add(jScrollPane3);
+        jScrollPane3.setBounds(757, 284, 234, 86);
+
         lblMemberId.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         lblMemberId.setText("Member ID");
+        getContentPane().add(lblMemberId);
+        lblMemberId.setBounds(29, 244, 73, 20);
 
-        btnAdd.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        btnAdd.setFont(new java.awt.Font("Script MT Bold", 1, 18)); // NOI18N
+        btnAdd.setIcon(new javax.swing.ImageIcon(getClass().getResource("/edu/ijse/view/add image.png"))); // NOI18N
         btnAdd.setText("Add");
         btnAdd.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnAddActionPerformed(evt);
             }
         });
+        getContentPane().add(btnAdd);
+        btnAdd.setBounds(574, 449, 110, 40);
+        getContentPane().add(txtMemberId);
+        txtMemberId.setBounds(230, 244, 234, 22);
 
         lblReturnId.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         lblReturnId.setText("Return ID");
+        getContentPane().add(lblReturnId);
+        lblReturnId.setBounds(29, 160, 70, 20);
 
         txtBorrowingId.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtBorrowingIdActionPerformed(evt);
             }
         });
+        getContentPane().add(txtBorrowingId);
+        txtBorrowingId.setBounds(235, 160, 209, 22);
+        getContentPane().add(txtReturnId);
+        txtReturnId.setBounds(235, 122, 206, 20);
 
         lblBorrowingID.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         lblBorrowingID.setText("Boorowing ID");
+        getContentPane().add(lblBorrowingID);
+        lblBorrowingID.setBounds(29, 121, 91, 20);
 
         lblQty.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
         lblQty.setText("Quantity");
+        getContentPane().add(lblQty);
+        lblQty.setBounds(29, 413, 57, 20);
 
-        btnBorrowingIdSearch.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        btnBorrowingIdSearch.setFont(new java.awt.Font("Script MT Bold", 1, 18)); // NOI18N
+        btnBorrowingIdSearch.setIcon(new javax.swing.ImageIcon(getClass().getResource("/edu/ijse/view/search.jpg"))); // NOI18N
         btnBorrowingIdSearch.setText("Search");
         btnBorrowingIdSearch.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnBorrowingIdSearchActionPerformed(evt);
             }
         });
+        getContentPane().add(btnBorrowingIdSearch);
+        btnBorrowingIdSearch.setBounds(500, 110, 130, 50);
 
         lblBorrowingData.setColumns(20);
         lblBorrowingData.setRows(5);
         jScrollPane2.setViewportView(lblBorrowingData);
 
-        btnPlace.setFont(new java.awt.Font("Segoe UI", 1, 14)); // NOI18N
+        getContentPane().add(jScrollPane2);
+        jScrollPane2.setBounds(675, 96, 234, 86);
+        getContentPane().add(jSeparator2);
+        jSeparator2.setBounds(0, 223, 1000, 3);
+        getContentPane().add(txtQty);
+        txtQty.setBounds(230, 414, 234, 22);
+
+        btnPlace.setFont(new java.awt.Font("Script MT Bold", 1, 18)); // NOI18N
+        btnPlace.setIcon(new javax.swing.ImageIcon(getClass().getResource("/edu/ijse/view/download 1.jpg"))); // NOI18N
         btnPlace.setText("Place");
         btnPlace.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnPlaceActionPerformed(evt);
             }
         });
+        getContentPane().add(btnPlace);
+        btnPlace.setBounds(654, 592, 130, 42);
+        getContentPane().add(txtBookId);
+        txtBookId.setBounds(757, 244, 234, 22);
 
         tblReturn.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -195,143 +254,12 @@ public class ReturnView extends javax.swing.JFrame {
         });
         jScrollPane4.setViewportView(tblReturn);
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(lblTopic, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-            .addGroup(layout.createSequentialGroup()
-                .addGap(29, 29, 29)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(lblMemberId)
-                            .addComponent(lblQty)
-                            .addComponent(btnMemberSearch)
-                            .addComponent(lblReturnId, javax.swing.GroupLayout.PREFERRED_SIZE, 70, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(18, 18, 18)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(78, 78, 78)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(txtQty, javax.swing.GroupLayout.PREFERRED_SIZE, 234, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addGroup(layout.createSequentialGroup()
-                                        .addGap(12, 12, 12)
-                                        .addComponent(txtMemberId, javax.swing.GroupLayout.PREFERRED_SIZE, 207, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                .addComponent(txtBorrowingId, javax.swing.GroupLayout.PREFERRED_SIZE, 209, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(37, 37, 37)))
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addGroup(layout.createSequentialGroup()
-                                .addGap(0, 68, Short.MAX_VALUE)
-                                .addComponent(btnBorrowingIdSearch)
-                                .addGap(46, 46, 46)
-                                .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addGap(91, 91, 91))
-                            .addGroup(javax.swing.GroupLayout.Alignment.LEADING, layout.createSequentialGroup()
-                                .addGap(92, 92, 92)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(btnBookSearch)
-                                    .addComponent(lblBookId))
-                                .addGap(36, 36, 36)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                                    .addComponent(txtBookId, javax.swing.GroupLayout.PREFERRED_SIZE, 234, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                                .addGap(0, 0, Short.MAX_VALUE))))
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(lblBorrowingID)
-                        .addGap(69, 69, 69)
-                        .addComponent(txtReturnId, javax.swing.GroupLayout.PREFERRED_SIZE, 206, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addContainerGap())))
-            .addComponent(jSeparator2)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jSeparator1)
-                .addContainerGap())
-            .addGroup(layout.createSequentialGroup()
-                .addGap(25, 25, 25)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(lblFine)
-                        .addGap(85, 85, 85)
-                        .addComponent(txtFine, javax.swing.GroupLayout.PREFERRED_SIZE, 227, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(161, 161, 161)
-                        .addComponent(btnAdd)
-                        .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-                    .addGroup(layout.createSequentialGroup()
-                        .addComponent(jScrollPane4)
-                        .addGap(18, 18, 18)
-                        .addComponent(btnPlace)
-                        .addGap(35, 35, 35)
-                        .addComponent(btnBack)
-                        .addGap(59, 59, 59))))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(29, 29, 29)
-                .addComponent(lblTopic, javax.swing.GroupLayout.PREFERRED_SIZE, 60, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 10, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(25, 25, 25)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(txtReturnId, javax.swing.GroupLayout.PREFERRED_SIZE, 20, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(lblBorrowingID))
-                        .addGap(18, 18, 18)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(btnBorrowingIdSearch)
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                .addComponent(txtBorrowingId, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addComponent(lblReturnId))))
-                    .addComponent(jScrollPane2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 12, Short.MAX_VALUE)
-                .addComponent(jSeparator2, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(18, 18, 18)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(lblMemberId)
-                    .addComponent(txtMemberId, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(lblBookId)
-                    .addComponent(txtBookId, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(26, 26, 26)
-                        .addComponent(btnMemberSearch))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(29, 29, 29)
-                        .addComponent(btnBookSearch))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(18, 18, 18)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(jScrollPane3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addComponent(jScrollPane1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))))
-                .addGap(43, 43, 43)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(txtQty, javax.swing.GroupLayout.PREFERRED_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(lblQty))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 19, Short.MAX_VALUE)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addComponent(jSeparator1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                        .addGap(30, 30, 30)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                            .addComponent(lblFine)
-                            .addComponent(txtFine, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
-                        .addGap(18, 18, 18)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING)
-                            .addComponent(jScrollPane4, javax.swing.GroupLayout.PREFERRED_SIZE, 136, javax.swing.GroupLayout.PREFERRED_SIZE)
-                            .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                                .addComponent(btnPlace)
-                                .addComponent(btnBack)))
-                        .addContainerGap())
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                        .addComponent(btnAdd)
-                        .addGap(149, 149, 149))))
-        );
+        getContentPane().add(jScrollPane4);
+        jScrollPane4.setBounds(25, 513, 611, 136);
+
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/edu/ijse/view/background image.jpg"))); // NOI18N
+        getContentPane().add(jLabel1);
+        jLabel1.setBounds(0, 0, 1280, 690);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -377,6 +305,7 @@ Place();
     private javax.swing.JButton btnBorrowingIdSearch;
     private javax.swing.JButton btnMemberSearch;
     private javax.swing.JButton btnPlace;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JScrollPane jScrollPane1;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JScrollPane jScrollPane3;

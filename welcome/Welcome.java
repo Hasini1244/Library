@@ -21,6 +21,7 @@ public class Welcome extends javax.swing.JFrame {
        setExtendedState(JFrame.MAXIMIZED_BOTH);
     }
 
+    
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -32,43 +33,32 @@ public class Welcome extends javax.swing.JFrame {
 
         lblLibrary = new javax.swing.JLabel();
         btnNext = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        getContentPane().setLayout(null);
 
-        lblLibrary.setFont(new java.awt.Font("Segoe UI", 3, 48)); // NOI18N
+        lblLibrary.setFont(new java.awt.Font("Script MT Bold", 2, 80)); // NOI18N
         lblLibrary.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblLibrary.setText("Library Management System");
+        getContentPane().add(lblLibrary);
+        lblLibrary.setBounds(6, 112, 1040, 250);
 
-        btnNext.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
-        btnNext.setText("Next  >");
+        btnNext.setBackground(new java.awt.Color(249, 249, 249));
+        btnNext.setFont(new java.awt.Font("Script MT Bold", 1, 24)); // NOI18N
+        btnNext.setIcon(new javax.swing.ImageIcon(getClass().getResource("/edu/ijse/welcome/next.jpg"))); // NOI18N
+        btnNext.setText("Next>");
         btnNext.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnNextActionPerformed(evt);
             }
         });
+        getContentPane().add(btnNext);
+        btnNext.setBounds(1040, 550, 170, 70);
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(lblLibrary, javax.swing.GroupLayout.PREFERRED_SIZE, 961, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(80, Short.MAX_VALUE))
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(btnNext, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(97, 97, 97))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addGap(112, 112, 112)
-                .addComponent(lblLibrary, javax.swing.GroupLayout.PREFERRED_SIZE, 76, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 211, Short.MAX_VALUE)
-                .addComponent(btnNext)
-                .addGap(113, 113, 113))
-        );
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/edu/ijse/welcome/welcome image.jpg"))); // NOI18N
+        getContentPane().add(jLabel1);
+        jLabel1.setBounds(-20, -20, 1360, 820);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -82,6 +72,7 @@ public class Welcome extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnNext;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel lblLibrary;
     // End of variables declaration//GEN-END:variables
 }

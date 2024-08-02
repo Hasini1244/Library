@@ -38,81 +38,60 @@ public class Login extends javax.swing.JFrame {
         txtPassword = new javax.swing.JPasswordField();
         txtUserName = new javax.swing.JTextField();
         btnLogin = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        getContentPane().setLayout(null);
 
-        lblLogin.setFont(new java.awt.Font("Segoe UI", 3, 36)); // NOI18N
+        lblLogin.setFont(new java.awt.Font("Script MT Bold", 3, 48)); // NOI18N
         lblLogin.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        lblLogin.setText("Login");
+        lblLogin.setText("Login.....");
+        getContentPane().add(lblLogin);
+        lblLogin.setBounds(18, -4, 976, 110);
 
         lblUserName.setBackground(new java.awt.Color(255, 255, 255));
-        lblUserName.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        lblUserName.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
+        lblUserName.setIcon(new javax.swing.ImageIcon(getClass().getResource("/edu/ijse/login/username image.png"))); // NOI18N
         lblUserName.setText("User Name");
+        getContentPane().add(lblUserName);
+        lblUserName.setBounds(31, 116, 200, 60);
 
-        lblPassword.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
+        lblPassword.setFont(new java.awt.Font("Segoe UI", 1, 24)); // NOI18N
+        lblPassword.setIcon(new javax.swing.ImageIcon(getClass().getResource("/edu/ijse/login/password.png"))); // NOI18N
         lblPassword.setText("Password");
+        getContentPane().add(lblPassword);
+        lblPassword.setBounds(31, 237, 200, 60);
 
-        txtPassword.setBackground(new java.awt.Color(153, 204, 255));
+        txtPassword.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        txtPassword.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
+        getContentPane().add(txtPassword);
+        txtPassword.setBounds(250, 260, 430, 40);
 
-        txtUserName.setBackground(new java.awt.Color(153, 204, 255));
+        txtUserName.setFont(new java.awt.Font("Segoe UI", 0, 18)); // NOI18N
+        txtUserName.setBorder(javax.swing.BorderFactory.createBevelBorder(javax.swing.border.BevelBorder.RAISED));
         txtUserName.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 txtUserNameActionPerformed(evt);
             }
         });
+        getContentPane().add(txtUserName);
+        txtUserName.setBounds(250, 130, 430, 40);
 
-        btnLogin.setBackground(new java.awt.Color(102, 0, 102));
-        btnLogin.setFont(new java.awt.Font("Segoe UI", 1, 18)); // NOI18N
-        btnLogin.setForeground(new java.awt.Color(255, 255, 255));
+        btnLogin.setBackground(new java.awt.Color(249, 242, 242));
+        btnLogin.setFont(new java.awt.Font("Script MT Bold", 1, 36)); // NOI18N
+        btnLogin.setIcon(new javax.swing.ImageIcon(getClass().getResource("/edu/ijse/login/login image.jpg"))); // NOI18N
         btnLogin.setText("Login");
         btnLogin.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnLoginActionPerformed(evt);
             }
         });
+        getContentPane().add(btnLogin);
+        btnLogin.setBounds(750, 460, 230, 90);
 
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, layout.createSequentialGroup()
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addComponent(btnLogin)
-                .addGap(202, 202, 202))
-            .addGroup(layout.createSequentialGroup()
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(31, 31, 31)
-                        .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addComponent(lblPassword)
-                            .addGroup(layout.createSequentialGroup()
-                                .addComponent(lblUserName)
-                                .addGap(91, 91, 91)
-                                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(txtUserName, javax.swing.GroupLayout.PREFERRED_SIZE, 357, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                    .addComponent(txtPassword, javax.swing.GroupLayout.PREFERRED_SIZE, 357, javax.swing.GroupLayout.PREFERRED_SIZE)))))
-                    .addGroup(layout.createSequentialGroup()
-                        .addGap(18, 18, 18)
-                        .addComponent(lblLogin, javax.swing.GroupLayout.PREFERRED_SIZE, 871, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addContainerGap(111, Short.MAX_VALUE))
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(lblLogin, javax.swing.GroupLayout.PREFERRED_SIZE, 73, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addGap(37, 37, 37)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(lblUserName)
-                    .addComponent(txtUserName, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(91, 91, 91)
-                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(lblPassword)
-                    .addComponent(txtPassword, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(62, 62, 62)
-                .addComponent(btnLogin)
-                .addContainerGap(329, Short.MAX_VALUE))
-        );
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/edu/ijse/login/background image.jpg"))); // NOI18N
+        getContentPane().add(jLabel1);
+        jLabel1.setBounds(-10, -4, 2970, 720);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -138,6 +117,7 @@ public class Login extends javax.swing.JFrame {
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnLogin;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel lblLogin;
     private javax.swing.JLabel lblPassword;
     private javax.swing.JLabel lblUserName;
